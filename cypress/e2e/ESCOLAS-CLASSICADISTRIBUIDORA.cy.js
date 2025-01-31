@@ -1662,4 +1662,1122 @@ describe("template spec", () => {
     cy.wait(7000);
     cy.get(".fa-check-circle").should("be.visible");
   });
+
+  /************* TESTES DE FRETES ************************************************************************************************************************************************************************************************** */
+  //TESTES 1 ANO BOLINHA RETIRAR NA DISTRIBUIDORA
+  //teste que passou 25:
+  it("TESTE 25 CLASSICA, 1 ANO BOLINHA, RETIRAR NA DISTRIBUIDORA, PAGAMENTO CARTAO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#cc-number").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf").type("04809155129", { force: true });
+    cy.get("#cc-nome").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration").type("12/2026", { force: true });
+    cy.get("#cc-cvv").type("235", { force: true });
+    cy.get("#parcelasSelect").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 26:
+  it("TESTE 26 CLASSICA, 1 ANO BOLINHA, RETIRAR NA DISTRIBUIDORA, PAGAMENTO PIX", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get("#btnPixCopiaCola").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 27:
+  it("TESTE 27 CLASSICA, 1 ANO BOLINHA, RETIRAR NA DISTRIBUIDORA, PAGAMENTO BOLETO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get(".swal2-confirm").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 28:
+  it("TESTE 28 CLASSICA, 1 ANO BOLINHA, RETIRAR NA DISTRIBUIDORA, PAGAMENTO 2 CARTOES", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    //primeiro cartão:
+    cy.get("#cc-number-multiple").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple").type("235", { force: true });
+    cy.get("#valor_multiple").type("1,00", { force: true });
+    cy.get("#parcelasSelectMultiple1").select("1", { force: true });
+    //segundo cartão:
+    cy.get("#cc-number-multiple2").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple-2").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple2").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple2").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple2").type("235", { force: true });
+    cy.get("#parcelasSelectMultiple2").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+  /***************************TESTES BOLINHA (SEDEX)******************************/
+  //teste que passou 29
+  it("TESTE 29 CLASSICA, 1 ANO BOLINHA, FRETE NORMAL (SEDEX), PAGAMENTO CARTAO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#cc-number").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf").type("04809155129", { force: true });
+    cy.get("#cc-nome").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration").type("12/2026", { force: true });
+    cy.get("#cc-cvv").type("235", { force: true });
+    cy.get("#parcelasSelect").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 30:
+  it("TESTE 30 CLASSICA, 1 ANO BOLINHA, FRETE NORMAL (SEDEX), PAGAMENTO PIX", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get("#btnPixCopiaCola").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 31:
+  it("TESTE 31 CLASSICA, 1 ANO BOLINHA, FRETE NORMAL (SEDEX), PAGAMENTO BOLETO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get(".swal2-confirm").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 32:
+  it("TESTE 32 CLASSICA, 1 ANO BOLINHA, FRETE NORMAL (SEDEX), PAGAMENTO 2 CARTOES", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    //primeiro cartão:
+    cy.get("#cc-number-multiple").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple").type("235", { force: true });
+    cy.get("#valor_multiple").type("1,00", { force: true });
+    cy.get("#parcelasSelectMultiple1").select("1", { force: true });
+    //segundo cartão:
+    cy.get("#cc-number-multiple2").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple-2").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple2").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple2").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple2").type("235", { force: true });
+    cy.get("#parcelasSelectMultiple2").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  /***************************TESTES BOLINHA FRETE ECONOMICO (PAC)******************************/
+
+  //teste que passou 33
+  it("TESTE 33 CLASSICA, 1 ANO BOLINHA, FRETE ECONOMICO (PAC), PAGAMENTO CARTAO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#cc-number").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf").type("04809155129", { force: true });
+    cy.get("#cc-nome").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration").type("12/2026", { force: true });
+    cy.get("#cc-cvv").type("235", { force: true });
+    cy.get("#parcelasSelect").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 34:
+  it("TESTE 34 CLASSICA, 1 ANO BOLINHA, FRETE ECONOMICO (PAC), PAGAMENTO PIX", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get("#btnPixCopiaCola").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 35:
+  it("TESTE 35 CLASSICA, 1 ANO BOLINHA, FRETE ECONOMICO (PAC), PAGAMENTO BOLETO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get(".swal2-confirm").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 36:
+  it("TESTE 36 CLASSICA, 1 ANO BOLINHA, FRETE ECONOMICO (PAC), PAGAMENTO 2 CARTOES", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/2417"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    //primeiro cartão:
+    cy.get("#cc-number-multiple").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple").type("235", { force: true });
+    cy.get("#valor_multiple").type("1,00", { force: true });
+    cy.get("#parcelasSelectMultiple1").select("1", { force: true });
+    //segundo cartão:
+    cy.get("#cc-number-multiple2").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple-2").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple2").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple2").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple2").type("235", { force: true });
+    cy.get("#parcelasSelectMultiple2").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  /************* TESTES DE FRETES ************************************************************************************************************************************************************************************************** */
+  //TESTES 1 ANO FUNDAMENTAL RETIRAR NA DISTRIBUIDORA
+  //teste que passou 37:
+  it("TESTE 37 CLASSICA, 1 ANO FUNDAMENTAL, RETIRAR NA DISTRIBUIDORA, PAGAMENTO CARTAO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#cc-number").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf").type("04809155129", { force: true });
+    cy.get("#cc-nome").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration").type("12/2026", { force: true });
+    cy.get("#cc-cvv").type("235", { force: true });
+    cy.get("#parcelasSelect").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 38:
+  it("TESTE 38 CLASSICA, 1 ANO FUNDAMENTAL, RETIRAR NA DISTRIBUIDORA, PAGAMENTO PIX", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get("#btnPixCopiaCola").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 39:
+  it("TESTE 39 CLASSICA, 1 ANO FUNDAMENTAL, RETIRAR NA DISTRIBUIDORA, PAGAMENTO BOLETO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get(".swal2-confirm").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 40:
+  it("TESTE 40 CLASSICA, 1 ANO FUNDAMENTAL, RETIRAR NA DISTRIBUIDORA, PAGAMENTO 2 CARTOES", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#distribuidora_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    //primeiro cartão:
+    cy.get("#cc-number-multiple").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple").type("235", { force: true });
+    cy.get("#valor_multiple").type("1,00", { force: true });
+    cy.get("#parcelasSelectMultiple1").select("1", { force: true });
+    //segundo cartão:
+    cy.get("#cc-number-multiple2").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple-2").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple2").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple2").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple2").type("235", { force: true });
+    cy.get("#parcelasSelectMultiple2").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+  /***************************TESTES FUNDAMENTAL (SEDEX)******************************/
+  //teste que passou 41
+  it("TESTE 41 CLASSICA, 1 ANO FUNDAMENTAL, FRETE NORMAL (SEDEX), PAGAMENTO CARTAO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#cc-number").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf").type("04809155129", { force: true });
+    cy.get("#cc-nome").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration").type("12/2026", { force: true });
+    cy.get("#cc-cvv").type("235", { force: true });
+    cy.get("#parcelasSelect").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 42:
+  it("TESTE 42 CLASSICA, 1 ANO FUNDAMENTAL, FRETE NORMAL (SEDEX), PAGAMENTO PIX", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get("#btnPixCopiaCola").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 43:
+  it("TESTE 43 CLASSICA, 1 ANO FUNDAMENTAL, FRETE NORMAL (SEDEX), PAGAMENTO BOLETO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get(".swal2-confirm").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 44:
+  it("TESTE 44 CLASSICA, 1 ANO FUNDAMENTAL, FRETE NORMAL (SEDEX), PAGAMENTO 2 CARTOES", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#sedex_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    //primeiro cartão:
+    cy.get("#cc-number-multiple").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple").type("235", { force: true });
+    cy.get("#valor_multiple").type("1,00", { force: true });
+    cy.get("#parcelasSelectMultiple1").select("1", { force: true });
+    //segundo cartão:
+    cy.get("#cc-number-multiple2").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple-2").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple2").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple2").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple2").type("235", { force: true });
+    cy.get("#parcelasSelectMultiple2").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  /***************************TESTES FUNDAMENTAL FRETE ECONOMICO (PAC)******************************/
+
+  //teste que passou 45
+  it("TESTE 45 CLASSICA, 1 ANO FUNDAMENTAL, FRETE ECONOMICO (PAC), PAGAMENTO CARTAO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#cc-number").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf").type("04809155129", { force: true });
+    cy.get("#cc-nome").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration").type("12/2026", { force: true });
+    cy.get("#cc-cvv").type("235", { force: true });
+    cy.get("#parcelasSelect").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 46:
+  it("TESTE 46 CLASSICA, 1 ANO FUNDAMENTAL, FRETE ECONOMICO (PAC), PAGAMENTO PIX", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#radioWithGap11").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get("#btnPixCopiaCola").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 47:
+  it("TESTE 47 CLASSICA, 1 ANO FUNDAMENTAL, FRETE ECONOMICO (PAC), PAGAMENTO BOLETO", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#radioWithGap6").click({ force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.get(".swal2-confirm").click({ force: true });
+    cy.wait(3000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
+
+  //teste que passou 48:
+  it("TESTE 48 CLASSICA, 1 ANO FUNDAMENTAL, FRETE ECONOMICO (PAC), PAGAMENTO 2 CARTOES", () => {
+    cy.get("#btn_modal_cookieX").click({ force: true });
+    cy.get('input[name="form_email"]').type("silveriohs@hotmail.com", {
+      force: true,
+    });
+    cy.get('input[name="form_password"]').type("123", { force: true });
+    cy.get('input[name="form_code"]').type("TSSSTHARDBH", { force: true });
+    cy.contains("Entrar").click({ force: true });
+    cy.get("#dropdownMenu1-1").click({ force: true });
+    cy.get(
+      '[href="https://escolas.classicadistribuidora.com.br/home/class_selector/1400"]'
+    ).click({ force: true });
+    cy.get("#dropdownAlunos").click({ force: true });
+    cy.get('[codigoaluno="6"]').click({ force: true });
+    cy.get("#btn_salvar_nome_aluno").click({ force: true });
+    cy.get("#btn_comprar_lista").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get(
+      "#modal_lista > .modal-dialog > .modal-content > .modal-footer > .btn-teal"
+    ).click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#pac_select").click({ force: true });
+    cy.get("#btn_pedido").click({ force: true });
+    cy.get(
+      "#modal_cookie > .modal-dialog > .modal-content > .modal-header > .close"
+    ).click({ force: true });
+    cy.get("#btn_aceite_sistema_de_ensino_carrinho").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    cy.get("#radioWithGap5").click({ force: true });
+    //primeiro cartão:
+    cy.get("#cc-number-multiple").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple").type("235", { force: true });
+    cy.get("#valor_multiple").type("1,00", { force: true });
+    cy.get("#parcelasSelectMultiple1").select("1", { force: true });
+    //segundo cartão:
+    cy.get("#cc-number-multiple2").type("5448280000000007", { force: true });
+    cy.get("#cc-cpf-multiple-2").type("04809155129", { force: true });
+    cy.get("#cc-nome-multiple2").type("Igor Teste Cypress", { force: true });
+    cy.get("#cc-expiration-multiple2").type("12/2026", { force: true });
+    cy.get("#cc-cvv-multiple2").type("235", { force: true });
+    cy.get("#parcelasSelectMultiple2").select("1", { force: true });
+    cy.get("#btn_modal_confirmacao").click({ force: true });
+    cy.get("#btn_comprar").click({ force: true });
+    cy.wait(7000);
+    cy.get(".fa-check-circle").should("be.visible");
+  });
 });
